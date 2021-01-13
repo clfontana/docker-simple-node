@@ -12,3 +12,9 @@ This is a very simple, bare-bones NodeJS project created for you to use with Doc
 
 ## Container teardown
 * Remove container: `docker kill {container_id}` where `container_id` can be retrieved by running `docker ps` and found under the column `CONTAINER ID`
+
+## Container info
+* View all running containers also killed containers `docker ps -a`
+* Inspect all object of a running container `docker inspect <container-id>`
+* Show all logs of a container `docker logs <container-id>`
+* Execute sh command container `docker exec -it <container-id> sh`
